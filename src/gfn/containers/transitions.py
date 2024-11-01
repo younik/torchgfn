@@ -142,6 +142,8 @@ class Transitions(Container):
         """Compute the tensor of shape (n_transitions,) containing the log rewards for the transitions."""
         if self._log_rewards is not None:
             return self._log_rewards
+        
+        assert False
         if self.is_backward:
             return None
         else:

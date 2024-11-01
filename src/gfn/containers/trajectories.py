@@ -157,6 +157,8 @@ class Trajectories(Container):
         if self._log_rewards is not None:
             assert self._log_rewards.shape == (self.n_trajectories,)
             return self._log_rewards
+    
+        assert False
         if self.is_backward:
             return None
         try:
